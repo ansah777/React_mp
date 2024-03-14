@@ -1,0 +1,68 @@
+=>MediaPlayer
+==============
+
+
+pages
+=====
+->landing
+    -header
+    -footer
+->dashboard
+    -header
+    -footer
+    -add video
+    -list video
+    -category
+->history
+
+
+
+1. landingpage-intro
+2. add youtube videos
+3. list added videos
+4. play added videos
+5. delete added videos
+6. add categotry
+7. list category
+8. list category videos
+9. add videos to categories
+10. delete categories
+11. list watch history
+
+we did
+======
+->project create
+->clean up
+->basic css
+->react-bootstrap install
+    npm i create-bootstrap bootstrap
+->set bootstrap theme
+    bootswatch.com[bootstrap.min.css]
+->pages & components
+->routing of pages and components    
+    react-router-dom
+    ->cmd-npm i create-router-dom
+
+    =>Axios:
+    =========
+
+    -package with method for XmlHTTPRequests
+    -handle data transformation itsef
+    -to install
+        npm i axios
+
+    -axios request structure
+        ->basic get request
+        axios.get("url")
+        -other requests
+        const req=axios.create({options})
+
+        {options}=>
+
+        {
+                base_url:"localhost:3000",
+                url:"/allVideos",
+                method:"POST",
+                headers:{"content-Type":"application/json"/"textplain"/multipart/form-data"},
+                data:{caption:"caption",url:"videourl",image:"img-address-url"}
+        }
